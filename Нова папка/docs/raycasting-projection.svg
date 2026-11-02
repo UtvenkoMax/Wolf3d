@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 390" role="img" aria-labelledby="title desc">
+  <title id="title">Відстань до стіни визначає її висоту на екрані</title>
+  <desc id="desc">Порівняння двох вертикальних смуг на екрані: близька стіна дає високу смугу, далека — нижчу.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/></marker>
+    <style>text{font-family:Segoe UI,Arial,sans-serif;fill:#182230}.title{font-size:22px;font-weight:700}.label{font-size:16px}.small{font-size:14px}</style>
+  </defs>
+  <rect width="840" height="390" rx="16" fill="#f7f9fc"/>
+  <text x="28" y="38" class="title">3. Перспектива: близьке малюється більшим</text>
+  <path d="M95 195H745" stroke="#64748b" stroke-width="2" stroke-dasharray="8 7"/>
+  <text x="102" y="180" class="label">горизонт / центр екрана</text>
+  <circle cx="140" cy="195" r="13" fill="#182230"/>
+  <path d="M155 195H280" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M155 195H520" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="280" y="85" width="20" height="220" rx="3" fill="#d97745"/>
+  <rect x="520" y="140" width="20" height="110" rx="3" fill="#d97745"/>
+  <text x="250" y="330" class="label">близька стіна</text>
+  <text x="495" y="275" class="label">далека стіна</text>
+  <text x="170" y="225" class="small">відстань d₁</text>
+  <text x="350" y="225" class="small">відстань d₂ &gt; d₁</text>
+  <path d="M650 90V300" stroke="#1e293b" stroke-width="3"/>
+  <path d="M650 120V270" stroke="#d97745" stroke-width="15"/>
+  <path d="M650 158V232" stroke="#7c3aed" stroke-width="15"/>
+  <text x="680" y="145" class="small">вища смуга</text>
+  <text x="680" y="207" class="small">нижча смуга</text>
+  <text x="28" y="370" class="small">У коді: lineHeight = screenHeight / perpWallDist. Подвоїли відстань — приблизно вдвічі зменшили висоту.</text>
+</svg>

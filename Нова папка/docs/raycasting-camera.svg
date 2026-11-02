@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" role="img" aria-labelledby="title desc">
+  <title id="title">Поле зору та промені рейкастера</title>
+  <desc id="desc">Вид зверху: з позиції гравця виходять три промені до різних точок стіни. Між гравцем і стіною позначено площину камери.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/></marker>
+    <style>
+      text{font-family:Segoe UI,Arial,sans-serif;fill:#182230}.title{font-size:22px;font-weight:700}.label{font-size:16px}.small{font-size:14px}.grid{stroke:#d9e0e8;stroke-width:1}.ray1{stroke:#e45756}.ray2{stroke:#168aad}.ray3{stroke:#49a078}
+    </style>
+  </defs>
+  <rect width="820" height="430" rx="16" fill="#f7f9fc"/>
+  <text x="28" y="38" class="title">1. Камера випускає промінь для кожної колонки екрана</text>
+  <g class="grid">
+    <path d="M80 70V385M130 70V385M180 70V385M230 70V385M280 70V385M330 70V385M380 70V385M430 70V385M480 70V385M530 70V385M580 70V385M630 70V385M680 70V385"/>
+    <path d="M80 85H680M80 135H680M80 185H680M80 235H680M80 285H680M80 335H680M80 385H680"/>
+  </g>
+  <path d="M650 95V375" stroke="#283747" stroke-width="16" stroke-linecap="round"/>
+  <text x="588" y="405" class="label">стіна на карті</text>
+  <path d="M150 235L650 145" fill="none" class="ray1" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M150 235L650 235" fill="none" class="ray2" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M150 235L650 325" fill="none" class="ray3" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M355 115V355" stroke="#6b7280" stroke-width="4" stroke-dasharray="9 7"/>
+  <text x="300" y="94" class="label">площина камери</text>
+  <circle cx="150" cy="235" r="12" fill="#182230"/>
+  <path d="M150 235L215 235" stroke="#182230" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="88" y="270" class="label">гравець</text>
+  <text x="458" y="130" class="small" fill="#a83232">лівий край зору</text>
+  <text x="458" y="222" class="small" fill="#116780">центр екрана</text>
+  <text x="458" y="350" class="small" fill="#26724e">правий край зору</text>
+  <text x="28" y="410" class="small">Кожен промінь дає одну вертикальну смугу; напрямок залежить від cameraX.</text>
+</svg>

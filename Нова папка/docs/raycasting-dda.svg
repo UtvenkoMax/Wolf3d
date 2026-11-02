@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 430" role="img" aria-labelledby="title desc">
+  <title id="title">Прохід променя алгоритмом DDA</title>
+  <desc id="desc">Промінь проходить клітинками сітки. DDA на кожному кроці вибирає найближчу вертикальну або горизонтальну межу та зупиняється у стіні.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#168aad"/></marker>
+    <style>text{font-family:Segoe UI,Arial,sans-serif;fill:#182230}.title{font-size:22px;font-weight:700}.label{font-size:15px}.wall-label{fill:#fff}.small{font-size:13px}.grid{stroke:#cbd5e1;stroke-width:1.5}</style>
+  </defs>
+  <rect width="840" height="430" rx="16" fill="#f7f9fc"/>
+  <text x="28" y="38" class="title">2. DDA переходить від межі до межі</text>
+  <g class="grid">
+    <path d="M70 70V370M140 70V370M210 70V370M280 70V370M350 70V370M420 70V370M490 70V370M560 70V370M630 70V370"/>
+    <path d="M70 70H630M70 130H630M70 190H630M70 250H630M70 310H630M70 370H630"/>
+  </g>
+  <rect x="420" y="190" width="70" height="60" fill="#7b8794" stroke="#283747" stroke-width="2"/>
+  <text x="431" y="225" class="label wall-label">СТІНА</text>
+  <path d="M105 95L420 244" fill="none" stroke="#168aad" stroke-width="4" marker-end="url(#arrow)"/>
+  <circle cx="105" cy="95" r="9" fill="#182230"/>
+  <text x="75" y="82" class="small">гравець</text>
+  <g fill="#fff" stroke="#168aad" stroke-width="3">
+    <circle cx="140" cy="112" r="11"/><circle cx="179" cy="130" r="11"/><circle cx="210" cy="145" r="11"/><circle cx="280" cy="178" r="11"/><circle cx="306" cy="190" r="11"/><circle cx="350" cy="211" r="11"/><circle cx="420" cy="244" r="11"/>
+  </g>
+  <g font-family="Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" fill="#182230" text-anchor="middle">
+    <text x="140" y="116">1</text><text x="179" y="134">2</text><text x="210" y="149">3</text><text x="280" y="182">4</text><text x="306" y="194">5</text><text x="350" y="215">6</text><text x="420" y="248">7</text>
+  </g>
+  <path d="M670 110H800" stroke="#168aad" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="668" y="90" class="label">На кожному кроці:</text>
+  <text x="668" y="145" class="small">порівняти відстань</text>
+  <text x="668" y="167" class="small">до межі X і межі Y</text>
+  <text x="668" y="205" class="small">перейти через ближчу</text>
+  <text x="668" y="227" class="small">і перевірити клітинку</text>
+  <text x="28" y="405" class="small">Цифри показують порядок перевірки клітинок; крок 7 знаходить стіну, і промінь зупиняється.</text>
+</svg>
